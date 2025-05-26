@@ -1,0 +1,1219 @@
+
+
+
+body {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      min-height: 100vh;
+      /* background: #f6fafd; */
+    }
+.title{
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 40px;
+      color: #22223b;
+      letter-spacing: -1px;
+}
+  
+    section.banner-tiktok-bg {
+      /* width: 100vw;   */
+      min-height: 600px;
+      background: #fff8ea;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 54px 0;
+    }
+    .banner-tiktok-main {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 32px;
+      position: relative;
+      z-index: 2;
+      gap: 40px;
+    }
+    .banner-tiktok-main .left {
+      flex: 1 1 55%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 2;
+      position: relative;
+    }
+    .banner-tiktok-main .left h1 {
+      font-size: 2.3rem;
+      font-weight: bold;
+      margin-bottom: 22px;
+      line-height: 1.1;
+      color: #222;
+      /* text-shadow: 0 4px 18px #fff7, 0 1px 2px #ffe06699; */
+    }
+    .banner-tiktok-main .left p {
+      font-size: 1.15rem;
+      margin-bottom: 42px;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #56491b;
+      max-width: 540px;
+    }
+    .banner-tiktok-main .btn-tiktok {
+      background: linear-gradient(90deg, #ffc76b 40%, #ffe3ae 100%);
+      color: #222;
+      border: none;
+      padding: 15px 52px;
+      font-size: 1.13rem;
+      font-weight: bold;
+      border-radius: 32px;
+      box-shadow: 0 4px 24px #ffe06666, 0 2px 8px #ff297533;    
+      cursor: pointer;
+      /* transition: background 0.16s, transform 0.2s; */
+      outline: none;
+      margin-top: 10px;
+      letter-spacing: 0.5px;
+      text-shadow: 0 2px 8px #fff9;
+    }
+    .banner-tiktok-main .btn-tiktok:hover {
+      background: linear-gradient(90deg,#ffe3ae 20%,#ffc76b 90% );
+      color: #222;
+      /* transform: translateY(-2px) scale(1.06); */
+    }
+    .banner-tiktok-main .right {
+      flex: 1 1 45%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+    .tiktok-img-vibrant {
+      position: relative;
+      width: 95vw;
+      max-width: 500px;
+      height: 62vw;
+      max-height: 340px;
+      min-width: 120px;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      filter: drop-shadow(0 8px 40px #ffe06666) drop-shadow(0 0px 16px #ff297588);
+      transition: width 0.3s, height 0.3s;
+    }
+    .tiktok-img-vibrant img.main {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 510 350" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M50,170 Q10,90 100,38 Q230,-30 350,50 Q380,60 460,20 Q520,0 505,130 Q540,310 340,340 Q240,380 150,310 Q70,250 62,220 Q55,200 50,170 Z"/></svg>');
+      -webkit-mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 510 350" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M50,170 Q10,90 100,38 Q230,-30 350,50 Q380,60 460,20 Q520,0 505,130 Q540,310 340,340 Q240,380 150,310 Q70,250 62,220 Q55,200 50,170 Z"/></svg>');
+      mask-size: cover;
+      -webkit-mask-size: cover;
+      mask-repeat: no-repeat;
+      background: #fff;
+      box-shadow: 0 8px 60px 0 #ff297544, 0 2px 12px #ffe06688;
+      border: none;
+      transition: box-shadow 0.3s;
+      z-index: 2;
+      position: relative;
+    }
+    .tiktok-img-vibrant .img-overlay {
+      position: absolute;
+      left: 12%;
+      top: 57%;
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+      box-shadow: 0 4px 32px #ff297577, 0 2px 8px #ffe06655;
+      overflow: hidden;
+      border: 5px solid #fffbe1;
+      z-index: 3;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: float 4s ease-in-out infinite alternate;
+    }
+    @keyframes float {
+      from { transform: translateY(0) scale(1);}
+      to { transform: translateY(-16px) scale(1.06);}
+    }
+    .tiktok-img-vibrant .img-overlay img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .tiktok-img-vibrant::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      border-radius: 65% 35% 50% 50%/60% 70% 50% 40%;
+      background: conic-gradient(from 230deg, #ffe066, #ff2975, #fff, #ffe066);
+      opacity: 0.25;
+      filter: blur(16px);
+      mix-blend-mode: lighten;
+      transition: opacity 0.3s;
+    }
+    .tiktok-logo-deco {
+      position: absolute;
+      bottom: -32px;
+      left: -32px;
+      width: 80px;
+      opacity: 0.91;
+      z-index: 3;
+      pointer-events: none;
+      animation: tiktokiconmove 2.7s infinite alternate;
+      filter: drop-shadow(0 4px 16px #ffe06688);
+    }
+    @keyframes tiktokiconmove {
+      0% { transform: rotate(-8deg) scale(1);}
+      100% { transform: rotate(11deg) scale(1.13);}
+    }
+    /* Service Section */
+    .service-container {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      padding: 68px 0 44px 0;
+      position: relative;
+      z-index: 2;
+      background-color: white;
+      border-radius: 30px;
+      top: -46px;
+    }
+    .service-card {
+      background: #fff;
+      border-radius: 32px;
+      box-shadow: 0 4px 24px rgba(80, 112, 160, 0.06);
+      width: 270px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 44px 20px 36px;
+      margin-bottom: 0;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 2;
+    }
+    .service-card:hover {
+      box-shadow: 0 16px 48px rgba(80,112,160,0.12);
+    }
+    /* .services-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 38px;
+      color: #22223b;
+      letter-spacing: -1px;
+    }
+    .services-section {
+      background: #fff;
+      border-radius: 36px;
+      box-shadow: 0 4px 48px 0 #ffe0661a;
+      padding: 68px 0 44px 0;
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: -46px auto 0 auto;
+    } */
+    .service-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      box-shadow: 0 2px 8px #ffe06622;
+      border: 1.5px solid #f7fafd;
+    }
+    .service-title {
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      text-align: center;
+      min-height: 48px;
+    }
+    .service-desc {
+      font-size: 1.1rem;
+      color: #5c6a82;
+      text-align: center;
+      line-height: 1.56;
+      font-weight: 400;
+    }
+    .icon-tiktok { color: #5A4CF8; background: #F2F2FF; }
+    .icon-channel { color: #FF4EB2; background: #FFF2FA; }
+    .icon-kol { color: #21D04B; background: #E9FBF0; }
+    .icon-interact { color: #FFC226; background: #FFF8E2; }
+.why-tiktok{
+  background-image: url("img/nen1.png");
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+.why-tiktok-section {
+  max-width: 1060px;
+  margin: 0px auto;
+  border-radius: 32px;
+  text-align: center;
+  position: relative;
+}
+.why-tiktok-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin-bottom: 42px;
+  color: #22223b;
+  letter-spacing: -1px;
+}
+.why-tiktok-grid {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px 28px;
+  justify-content: center;
+}
+.why-tiktok-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 18px #ffe06618;
+  padding: 26px 26px 20px 18px;
+  min-height: 135px;
+  /* transition: box-shadow 0.2s, transform 0.14s; */
+  text-align: left;
+}
+.why-tiktok-feature:hover {
+  box-shadow: 0 8px 38px #ffe06644;
+  /* transform: translateY(-3px) scale(1.03); */
+}
+.why-tiktok-feature-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: linear-gradient(140deg, #ff2975 10%, #ffe066 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2.2rem;
+  box-shadow: 0 2px 12px #ff297533;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.why-tiktok-feature-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: #1a1a2e;
+}
+.why-tiktok-feature-desc {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #5c6a82;
+  line-height: 1.56;
+  font-weight: 400;
+}
+    /* Responsive */
+    @media (max-width: 1200px) {
+      .banner-tiktok-main { border-radius: 0; padding: 36px 5vw; }
+      .tiktok-img-vibrant { width: 90vw; height: 38vw; }
+      .service-container { gap: 18px; }
+      .service-card { width: 45vw; min-width: 220px; max-width: 390px; }
+    }
+    @media (max-width: 900px) {
+      .banner-tiktok-main { flex-direction: column; min-height: 0; padding: 36px 0;}
+      .banner-tiktok-main .left, .banner-tiktok-main .right { padding: 0; text-align: center; }
+      .tiktok-img-vibrant { margin: 0 auto; width: 94vw; height: 54vw; }
+      .banner-tiktok-main .right { padding: 0 0 24px 0; }
+      .service-container { flex-wrap: wrap; gap: 16px; padding-top: 44px;}
+      .service-card { width: 90vw; min-width: 180px; max-width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .banner-tiktok-main .left h1 { font-size: 1.2rem;padding: 0px 10px;}
+      .banner-tiktok-main .left p { font-size: 1.0rem; padding: 0px 10px; }
+      .tiktok-img-vibrant { width: 98vw; height: 62vw; min-width: 100px; min-height: 60px; }
+      .tiktok-img-vibrant .img-overlay { width: 70px; height: 70px; left: 8%; top: 62%;}
+      .service-container { flex-direction: column; align-items: center; padding: 18px 8px 8px 8px; top: -18px;}
+      .service-card { width: 100%; min-width: unset; padding: 28px 10px 20px;}
+      .service-title { font-size: 1.13rem; min-height: unset;}
+      .service-desc { font-size: 1rem; }
+      .service-icon { width: 54px; height: 54px; font-size: 1.8rem; margin-bottom: 18px;}
+    }
+
+    @media (max-width: 900px) {
+    .why-tiktok-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .why-tiktok-section {
+        padding: 28px 4px 16px 4px;
+    }
+    .why-tiktok-feature {
+        padding: 20px 14px 16px 14px;
+        min-height: unset;
+        font-size: 1rem;
+    }
+    }
+    @media (max-width: 600px) {
+        .why-tiktok-title { font-size: 1.19rem; margin-bottom: 20px; }
+        .why-tiktok-feature-icon { font-size: 1.3rem; width: 36px; height: 36px; border-radius: 9px; }
+        .why-tiktok-feature-title { font-size: 0.98rem;}
+        .why-tiktok-feature-desc { font-size: 0.93rem;}
+    }
+
+
+.sota-achievement-section {
+  max-width: 1200px;
+  margin: 88px auto;
+  padding: 0 12px;
+}
+.sota-achievement-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 38px;
+  color: #12142b;
+}
+.sota-achievement-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+.sota-achieve-box {
+  background: #fff;
+  border-radius: 26px;
+  box-shadow: 0 8px 40px #e6eeff33;
+  min-width: 200px;
+  max-width: 260px;
+  flex: 1 1 210px;
+  padding: 38px 18px 30px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.sota-achieve-box:hover {
+  box-shadow: 0 14px 44px #7c3aed12;
+}
+.sota-achieve-number {
+  font-size: 2.7em;
+  font-weight: 800;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.sota-blue { color: #463fda; }
+.sota-pink { color: #e64186; }
+.sota-green { color: #1cb86e; }
+.sota-yellow { color: #ffc226; }
+.sota-achieve-label {
+  font-size: 1.14em;
+  color: #22223b;
+  font-weight: 600;
+  margin-top: 3px;
+}
+.sota-achievement-bottom {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+.sota-achievement-left, .sota-achievement-right {
+  flex: 1 1 340px;
+  min-width: 260px;
+  max-width: 530px;
+}
+.sota-achievement-subtitle {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #12142b;
+}
+.sota-achievement-list {
+  list-style: disc inside;
+  font-size: 1.13em;
+  color: #22223b;
+  padding-left: 10px;
+  margin: 0;
+}
+.sota-achievement-list li {
+  margin-bottom: 13px;
+  line-height: 1.6;
+}
+.sota-achievement-list b.blue {
+  color: #463fda;
+  font-weight: 700;
+}
+.sota-achievement-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: flex-start;
+  margin-top: 18px;
+}
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 2px 8px #e6eeff33;
+  padding: 9px 18px;
+  min-width: 80px;
+  margin-bottom: 8px;
+  min-height: 54px;
+}
+.logo-box img {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 1000px) {
+  .sota-achievement-section { max-width: 99vw; }
+  .sota-achievement-title { font-size: 1.5rem;}
+  .sota-achievement-row { gap: 12px; }
+  .sota-achieve-box { min-width: 110px; padding: 20px 8px;}
+  .sota-achievement-bottom { flex-direction: column; gap: 28px;}
+  .sota-achievement-left, .sota-achievement-right { max-width: 99vw;flex: none; }
+  .sota-achievement-subtitle { font-size: 1.05rem;}
+}
+@media (max-width: 600px) {
+  .sota-achievement-title { font-size: 1.13rem;}
+  .sota-achievement-row { flex-direction: column; justify-content: center; align-items: center; gap: 10px;   margin-bottom: 16px;}
+  .sota-achieve-box { min-width: 110px; padding: 14px 4px; flex: none;}
+  .sota-achievement-number { font-size: 1.3em; }
+  .sota-achievement-bottom { gap: 14px; }
+  .logo-box { min-width: 54px; padding: 5px 7px;}
+  .logo-box img { height: 19px; }
+}
+
+.sota-pricing-wave,
+.sota-pricing-wave-bottom {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background: transparent;
+  margin-top: -2px;
+}
+.sota-pricing-wave-bottom svg {
+  min-width: 1200px;
+  max-width: 120vw;
+  display: block;
+}
+
+.sota-pricing-section {
+  max-width: 1200px;
+  margin: 4px auto;
+  padding: 0 12px 50px 12px;
+}
+.sota-pricing-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 60px;
+  color: #12142b;
+  letter-spacing: -1px;
+}
+.sota-pricing-table {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.sota-pricing-card {
+  background: #fff;
+  border-radius: 26px;
+  box-shadow: 0 6px 32px #e6eeff33;
+  min-width: 230px;
+  max-width: 270px;
+  flex: 1 1 230px;
+  padding: 32px 18px 26px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: box-shadow 0.15s, transform 0.13s;
+  margin-bottom: 10px;
+  overflow: visible;
+}
+.sota-pricing-card:hover {
+  box-shadow: 0 14px 44px #7c3aed18;
+  transform: translateY(-5px) scale(1.04);
+}
+.spc-header {
+  font-size: 1.13em;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+  color: #101828;
+}
+.spc-price {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #22223b;
+  margin-bottom: 2px;
+}
+.spc-currency { font-size: 0.6em; font-weight: 600; color: #999; margin-left: 2px;}
+.spc-period { color: #b1b5c3; font-size: 1em; margin-bottom: 11px;}
+.spc-desc { color: #7a7a90; font-size: 1em; margin-bottom: 19px; font-weight: 500;}
+.spc-btn {
+  /* width: 98%; */
+  padding: 11px 20px;
+  border: none;
+  border-radius: 24px;
+  font-size: 1.08em;
+  font-weight: 700;
+  background: #f7f8fa;
+  color: #22223b;
+  margin-bottom: 18px;
+  cursor: pointer;
+  transition: background 0.14s, color 0.14s;
+  box-shadow: 0 2px 8px #a7e6ff12;
+}
+.spc-btn-hot {
+  background: linear-gradient(90deg, #ff0050, #7c3aed 70%);
+  color: #fff;
+}
+.spc-btn-plus {
+  background: linear-gradient(90deg,#00f2ea,#7c3aed 60%);
+  color: #222;
+}
+.spc-btn:hover {
+  background: #7c3aed;
+  color: #fff;
+}
+.spc-btn-plus:hover {
+  background: #22223b;
+  color: #00f2ea;
+}
+.spc-features {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+.spc-features li {
+  margin: 11px 0;
+  font-size: 1em;
+  color: #22223b;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 20px;
+}
+.spc-features li:before {
+  content: "✔";
+  color: #00f2ea;
+  font-weight: bold;
+  font-size: 1em;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.spc-hot {
+  border: 2.2px solid #ff0050;
+}
+.spc-plus {
+  border: 2.2px solid #00f2ea;
+}
+.spc-badge, .spc-badge-plus {
+  position: absolute;
+  top: -18px;
+  right: -28px;
+  background: linear-gradient(90deg, #ff0050, #7c3aed 80%);
+  color: #fff;
+  font-size: 0.88em;
+  font-weight: bold;
+  padding: 7px 20px 7px 16px;
+  border-radius: 14px 0 14px 0;
+  box-shadow: 0 4px 14px #ff005066;
+  letter-spacing: 0.6px;
+  transform: rotate(13deg);
+  z-index: 2;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.spc-badge-plus {
+  background: linear-gradient(90deg, #00f2ea, #7c3aed 80%);
+  color: #222;
+  box-shadow: 0 4px 14px #00f2ea44;
+}
+@media (max-width: 1200px) {
+  .sota-pricing-section { max-width: 100vw; }
+  .spc-badge, .spc-badge-plus {
+    right: 2px;
+    top: -15px;
+    font-size: 0.8em;
+    padding: 5px 10px 5px 10px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1000px) {
+  .sota-pricing-table { gap: 16px; }
+  .sota-pricing-card { min-width: 180px; max-width: 90vw; }
+}
+@media (max-width: 780px) {
+  .sota-pricing-table {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .sota-pricing-card {
+    width: 90vw;
+    max-width: 98vw;
+  }
+  .spc-badge, .spc-badge-plus {
+    right: 2px;
+    top: -15px;
+    font-size: 0.8em;
+    padding: 5px 10px 5px 10px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 480px) {
+  .sota-pricing-title { font-size: 1.05rem;}
+  .sota-pricing-card { padding: 18px 4px 12px 4px; }
+  .spc-header { font-size: 1em; }
+  .spc-price { font-size: 1.1em;}
+  .spc-desc, .spc-period { font-size: 0.97em;}
+  .spc-features li { font-size: 0.98em;}
+}
+
+/* =============== Timeline Section =============== */
+.sota-timeline-section {
+  max-width: 900px;
+  margin: 60px auto 0 auto;
+  padding: 0 12px 60px 12px;
+  /* background: linear-gradient(180deg, #241901 0%, #3d2902 100%); */
+  border-radius: 32px;
+  /* box-shadow: 0 4px 32px #24190111; */
+}
+.sota-timeline-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 54px;
+  color: black;
+}
+.sota-timeline {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+.sota-timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0; bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #ffc226 0%, #ffe066 100%);
+  transform: translateX(-50%);
+  z-index: 0;
+  border-radius: 3px;
+}
+.sota-timeline-step {
+  position: relative;
+  width: 50%;
+  padding: 36px 36px 36px 0;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.sota-timeline-step:nth-child(even) {
+  left: 50%;
+  padding: 36px 0 36px 36px;
+  text-align: left;
+}
+.sota-timeline-step:nth-child(odd) {
+  text-align: right;
+}
+.sota-timeline-dot {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+  width: 46px; height: 46px;
+  background: linear-gradient(135deg, #ffc226 10%, #ffe066 90%);
+  border-radius: 50%;
+  box-shadow: 0 2px 14px #ffc22633;
+  display: flex;
+  align-items: center; justify-content: center;
+  font-size: 1.5em;
+  color: black;
+  z-index: 3;
+  border: 4px solid #fffbe1;
+}
+.sota-timeline-step:nth-child(even) .sota-timeline-dot {
+  left: -15px;
+  right: unset;
+}
+.sota-timeline-step-title {
+  font-size: 1.13em;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: black;
+}
+.sota-timeline-step-number {
+  display: inline-block;
+  background: #ffe06633;
+  color: #ffc226;
+  font-weight: bold;
+  font-size: 0.99em;
+  border-radius: 12px;
+  padding: 2px 13px;
+  margin-bottom: 8px;
+}
+.sota-timeline-step-desc {
+  font-size: 1em;
+  color: black;
+  line-height: 1.6;
+  margin: 0 8px;
+}
+
+@media (max-width: 900px) {
+  .sota-timeline { padding-left: 0; padding-right: 0;}
+  .sota-timeline-step, .sota-timeline-step:nth-child(even) {
+    width: 100%;
+    left: 0;
+    padding: 32px 0 32px 70px;
+    text-align: left;
+  }
+  .sota-timeline-dot, .sota-timeline-step:nth-child(even) .sota-timeline-dot {
+    left: 0;
+    right: unset;
+  }
+  .sota-timeline::before {
+    left: 23px;
+  }
+}
+@media (max-width: 600px) {
+  .sota-timeline-title { font-size: 1.15rem;}
+  .sota-timeline-step-title { font-size: 1em;}
+  .sota-timeline-step-desc { font-size: 0.97em;}
+  .sota-timeline-dot { width: 38px; height: 38px; font-size: 1.15em;}
+  .sota-timeline-step, .sota-timeline-step:nth-child(even) { padding-left: 46px; }
+  .sota-timeline::before { left: 17px;}
+}
+        .testimonials-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 40px 16px;
+            background: #fff;
+            border-radius: 22px;
+            /* box-shadow: 0 10px 40px 0 rgba(60,72,88,0.09); */
+        }
+        .testimonials-title {
+            text-align: center;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #1c2536;
+            margin-bottom: 8px;
+        }
+        .testimonials-desc {
+            text-align: center;
+            color: #6d768c;
+            font-size: 1.1rem;
+            margin-bottom: 36px;
+        }
+        .swiper {
+            padding-bottom: 48px;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            /* For equal height cards */
+        }
+        .testimonial-card {
+            background: linear-gradient(135deg, #f8fafd 60%, #e7edfa 100%);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(60, 72, 88, 0.09);
+            width: 340px;
+            min-height: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 36px 22px 28px 22px;
+            margin-bottom: 0;
+        }
+        .testimonial-card:hover {
+            box-shadow: 0 10px 32px rgba(60, 72, 88, 0.16);
+        }
+        .testimonial-avatar {
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 16px;
+            border: 2px solid #e1e6f0;
+            background: #fff;
+        }
+        .testimonial-content {
+            font-size: 1.08rem;
+            color: #213050;
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic;
+            line-height: 1.7;
+        }
+        .testimonial-name {
+            font-weight: 700;
+            color: #223a66;
+            font-size: 1.15rem;
+            margin-bottom: 2px;
+        }
+        .testimonial-job {
+            color: #8d98ad;
+            font-size: 1rem;
+        }
+        /* Swiper pagination */
+        .swiper-pagination-bullet {
+            background: #b3bcd4;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            background: #395886;
+        }
+        @media (max-width: 1100px) {
+            .testimonials-section {
+                max-width: 900px;
+            }
+        }
+        @media (max-width: 900px) {
+            .testimonials-section {
+                max-width: 700px;
+            }
+            .testimonial-card {
+                width: 90vw;
+                max-width: 360px;
+            }
+        }
+        @media (max-width: 700px) {
+            .testimonials-section {
+                max-width: 98vw;
+            }
+            .testimonial-card {
+                width: 98vw;
+                max-width: 370px;
+            }
+        }
+
+
+    .faq-container {
+      max-width: 1200px;
+      margin: 32px auto;
+      background: #fff;
+      /* border-radius: 32px; */
+      /* box-shadow: 0 8px 48px rgba(0,0,0,0.07); */
+      padding: 40px 32px 70px 32px;
+      display: flex;
+      gap: 46px;
+      align-items: flex-start;
+    }
+    .faq-image {
+      min-width: 320px;
+      max-width: 390px;
+      flex: 1 1 320px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .faq-image img {
+      width: 100%;
+      border-radius: 28px;
+      object-fit: cover;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.09);
+    }
+    .faq-content {
+      flex: 2 1 600px;
+      min-width: 0;
+    }
+    .faq-title {
+      /* color: #1857c6; */
+      font-size: 2.3rem;
+      font-weight: bold;
+      margin-bottom: 32px;
+      text-align: left;
+      letter-spacing: 1px;
+    }
+    .faq-list {
+      margin: 0;
+      padding: 0;
+    }
+    .faq-item {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 22px 0;
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-question-row {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    .faq-question-text {
+      flex: 1;
+      font-size: 1.22rem;
+      font-weight: 500;
+      color: #222;
+      word-break: break-word;
+    }
+    .faq-arrow {
+      font-size: 1.4rem;
+      color: #888;
+      margin-left: 14px;
+      transition: transform 0.22s;
+    }
+    .faq-item.active .faq-arrow {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      display: none;
+      color: #1857c6;
+      padding: 18px 0 0 0;
+      font-size: 1.13rem;
+      line-height: 1.7;
+    }
+    .faq-item.active .faq-answer {
+      display: block;
+      animation: fadeIn 0.4s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 980px) {
+      .faq-container { flex-direction: column; padding: 16px 2vw 44px 2vw; }
+      .faq-image, .faq-content { min-width: 0; max-width: 100%; }
+      .faq-title { font-size: 1.5rem; }
+      .faq-image { max-width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .faq-title { font-size: 1.1rem; }
+      .faq-question-text { font-size: 1rem; }
+      .faq-container { padding: 10px 18px; }
+    }        
+
+    .cta-gradient-bg {
+      width: 100%;
+      min-height: 100vh;
+      background: #fff8ea;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-wave-top {
+      width: 100%;
+      line-height: 0;
+      position: absolute;
+      top: 0; left: 0;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .cta-wave-top svg {
+      display: block;
+      width: 100%;
+      height: 100px;
+    }
+    .cta-main {
+      max-width: 1200px;
+      width: 100%;
+      display: flex;
+      gap: 50px;
+      margin: 0 auto;
+      margin-top: 60px;
+      border-radius: 32px;
+      overflow: visible;
+      background: none;
+      position: relative;
+      z-index: 3;
+      box-sizing: border-box;
+      padding-bottom: 60px;
+      color: black;
+    }
+    .cta-left {
+      flex: 1.2;
+      color: #fff;
+      padding: 60px 50px 48px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 360px;
+    }
+    .cta-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+      line-height: 1.2;
+      letter-spacing: 1.2px;
+      color: black;
+    }
+    .cta-desc {
+      font-size: 1.17rem;
+      margin-bottom: 38px;
+      line-height: 1.7;
+      opacity: 0.97;
+      font-weight: 400;
+      color: black;
+    }
+    .cta-btn-group {
+      display: flex;
+      gap: 26px;
+      margin-bottom: 34px;
+    }
+    .cta-btn {
+      padding: 18px 38px;
+      border: none;
+      border-radius: 36px;
+      font-size: 1.14rem;
+      font-weight: bold;
+      color: black;
+      background: linear-gradient(90deg, #ffc76b 40%, #ffe3ae 100%);
+      box-shadow: 0 4px 18px rgba(34,34,34,0.16);
+      cursor: pointer;
+      text-decoration: none;
+      outline: none;
+      display: inline-block;
+      white-space: nowrap;
+    }
+    .cta-btn:last-child {
+      background: linear-gradient(90deg,#ffe3ae 20%,#ffc76b 90% );
+    }
+    .cta-btn:hover, .cta-btn:focus {
+      background: linear-gradient(90deg, #ffc76b 40%, #ffe3ae 100%);
+    }
+    .cta-support {
+      margin-top: 32px;
+      font-size: 1.11rem;
+      line-height: 1.85;
+      font-weight: 400;
+      color: black;
+    }
+    .cta-support strong {
+      color: black;
+      font-weight: 700;
+    }
+    .cta-support a {
+      text-decoration: underline dotted #fff3 2px;
+      transition: color 0.18s;
+      margin-right: 10px;
+      color: black;
+    }
+    .cta-support a:hover {
+      color: #ffdf5e;
+    }
+    .cta-form-block {
+      flex: 1;
+      background: #fff;
+      border-radius: 25px;
+      box-shadow: 0 3px 20px rgba(0,0,0,0.15);
+      /* Giảm padding trái/phải xuống 20px */
+      padding: 36px 20px 28px 20px;
+      min-width: 350px;
+      max-width: 440px;
+      margin: 36px 0 36px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      box-sizing: border-box;
+    }
+    .cta-form-block h4 {
+      margin: 0 0 22px 0;
+      font-size: 1.3rem;
+      font-weight: bold;
+      letter-spacing: 0.3px;
+      text-align: center;
+    }
+    .cta-form label {
+      font-weight: 500;
+      margin-bottom: 5px;
+      display: block;
+      font-size: 1rem;
+    }
+    .cta-form {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0;
+    }
+    .cta-form input,
+    .cta-form textarea {
+      width: 100%;
+      border-radius: 10px;
+      border: 1.4px solid #eee;
+      padding: 13px 16px;
+      margin-bottom: 15px;
+      font-size: 1.02rem;
+      background: #fafbfc;
+      transition: border-color 0.2s;
+      resize: none;
+      box-sizing: border-box; /* Đảm bảo input/textarea tính padding vào width */
+      /* Không thêm margin trái/phải ở đây */
+    }
+    .cta-form input:focus,
+    .cta-form textarea:focus {
+      outline: none;
+      border: 1.4px solid #fff8ea;
+      background: #fff;
+    }
+    .cta-form textarea {
+      min-height: 60px;
+      max-height: 180px;
+    }
+    .cta-form button {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(90deg, #ffc76b 40%, #ffe3ae 100%);
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.14rem;
+      cursor: pointer;
+      margin-top: 10px;
+      box-shadow: 0 3px 8px #ee1d5238;
+    }
+    .cta-form button:hover {
+      background: linear-gradient(90deg,#ffe3ae 20%,#ffc76b 90% );
+      color: #fff;
+    }
+    @media (max-width: 1100px) {
+      .cta-main { flex-direction: column; padding: 0 2vw; gap: 0; }
+      .cta-left, .cta-form-block { min-width: 0; max-width: 100vw; }
+      .cta-form-block { margin: 20px auto 36px auto;}
+    }
+    @media (max-width: 700px) {
+      .cta-main { padding: 0; }
+      .cta-left { padding: 30px 5vw 22px 5vw; }
+      .cta-form-block { padding: 16px 2vw 14px 2vw;}
+      .cta-title { font-size: 1.3rem; }
+      .cta-support { font-size: 1rem; }
+      .cta-btn { font-size: 0.99rem; padding: 10px 16px;}
+    }
