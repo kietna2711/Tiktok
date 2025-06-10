@@ -1347,14 +1347,15 @@
             display: flex;
             flex-direction: column;
             align-items: stretch;
-            justify-content: stretch;
+            justify-content: center;
         }
 
         .tiktok-step-guide-right img {
             min-height: 340px;
-            height: 100%;
+            /* height: 1%; */
             border-radius: 28px;
             display: block;
+            text-align: center;
         }
 
         /* Tablet - Large Mobile */
