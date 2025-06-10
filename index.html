@@ -1,163 +1,125 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Banner Quản trị TikTok Sota - Fullwidth Yellow Section</title>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
   <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-  <section class="banner-tiktok-bg">
-    <div class="banner-tiktok-main">
-      <div class="left">
-        <h1>Dịch vụ Quản trị TikTok Chuyên nghiệp</h1>
-        <p>
-          SOTA đồng hành xây dựng và vận hành kênh TikTok cho cá nhân & doanh nghiệp: sáng tạo nội dung viral, tăng trưởng follow, tối ưu quảng cáo và livestream bán hàng. Hệ thống quản lý hiện đại, đội ngũ chuyên gia am hiểu nền tảng, cam kết hiệu quả thực tế và bảo mật tuyệt đối.
-        </p>
-        <a href="#dangkytuvan"><button class="btn-tiktok">Tư vấn miễn phí</button></a>
-      </div>
-      <div class="right">
-        <div class="tiktok-img-vibrant">
-          <img class="main" src="https://img.freepik.com/premium-photo/millennial-black-businesswoman-addressing-colleagues-corporate-business-meeting-close-up_1218270-3843.jpg" alt="Đội ngũ sáng tạo TikTok Sota">
-          <div class="img-overlay">
-            <img src="img/cong-dong-tiktok-noi-giao-luu-sang-tao-va-ket-noi.png" alt="Team Marketing">
-          </div>
-          <img class="tiktok-logo-deco" src="img/tiktok-02-removebg-preview.png" alt="TikTok Logo">
+        <div class="banner-bg">
+        <div class="banner-content">
+            <div class="content-left">
+                <h2>Dịch vụ Quản trị TikTok Chuyên nghiệp</h2>
+                <p>
+                    <strong>SOTA đồng hành xây dựng và vận hành kênh TikTok</strong> cho cá nhân & doanh nghiệp: sáng tạo nội dung viral, tăng trưởng follow, tối ưu quảng cáo và livestream bán hàng.<br><br>
+                    Hệ thống quản lý hiện đại, đội ngũ chuyên gia am hiểu nền tảng, cam kết hiệu quả thực tế và bảo mật tuyệt đối.
+                </p>
+                <a class="cta-btn" href="#">
+                    <i class="ri-phone-line"></i>
+                    Tư vấn miễn phí
+                </a>
+            </div>
+            <div class="content-right">
+                <div class="phone-container">
+                    <img class="phone-img" src="./img/ChatGPT_Image_13_54_09_6_thg_6__2025-removebg-preview.png" alt="iPhone TikTok">
+                    <div class="icons-explode">
+                        <div class="icon icon-1" style="--rotation: -12deg;">
+                            <img src="./img/asset_190-removebg-preview.png" alt="TikTok Icon">
+                        </div>
+                        <div class="icon icon-2" style="--rotation: 15deg;">
+                            <img src="./img/asset_390-removebg-preview.png" alt="Analytics Icon">  
+                        </div>
+                        <div class="icon icon-3" style="--rotation: -8deg;">
+                            <img src="./img/asset_490-removebg-preview.png" alt="Video Icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
-
-  <div class="service-container">
-    <!-- <div>
-        <h2 class="services-title">Dịch vụ nổi bật của SOTA</h2>
-    </div> -->
-
-    <div class="service-card">
-      <div class="service-icon icon-tiktok">
-        <i class="ri-megaphone-line"></i>
-      </div>
-      <div class="service-title">Quảng cáo TikTok</div>
-      <div class="service-desc">Chạy quảng cáo đa mục tiêu, tối ưu chi phí, tăng chuyển đổi bán hàng.</div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon icon-channel">
-        <i class="ri-play-circle-line"></i>
-      </div>
-      <div class="service-title">Xây dựng kênh</div>
-      <div class="service-desc">Tư vấn nội dung, sáng tạo video viral, phát triển kênh cá nhân/doanh nghiệp.</div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon icon-kol">
-        <i class="ri-user-voice-line"></i>
-      </div>
-      <div class="service-title">Booking KOL/Influencer</div>
-      <div class="service-desc">Đặt lịch hợp tác KOL/Influencer phù hợp lĩnh vực, tăng sự tin tưởng khách hàng.</div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon icon-interact">
-        <i class="ri-bar-chart-grouped-line"></i>
-      </div>
-      <div class="service-title">Tăng tương tác</div>
-      <div class="service-desc">Tăng like, follow, view, hỗ trợ livestream, tăng độ phủ và nhận diện thương hiệu.</div>
-    </div>
-  </div>
-
-  <section class="why-tiktok">
-      <div class="why-tiktok-section">
-        <h2 class="title">Tại sao chọn dịch vụ TikTok của SOTA?</h2>
-        <div class="why-tiktok-grid">
-          <div class="why-tiktok-feature">
-            <span class="why-tiktok-feature-icon"><i class="ri-shield-star-line"></i></span>
-            <div>
-              <h3 class="why-tiktok-feature-title">Chuyên gia TikTok thực chiến</h3>
-              <p class="why-tiktok-feature-desc">Đội ngũ giàu kinh nghiệm, am hiểu thuật toán, lên chiến lược và xử lý mọi tình huống thực tế trên TikTok.</p>
+    
+    <section class="why-choose-section">
+        <div class="why-choose-container">
+            <div class="why-choose-img">
+                <img src="./img//advance6-removebg-preview.png" alt="TikTok Analytics Dashboard" />
             </div>
-          </div>
-          <div class="why-tiktok-feature">
-            <span class="why-tiktok-feature-icon"><i class="ri-flashlight-line"></i></span>
-            <div>
-              <h3 class="why-tiktok-feature-title">Tăng trưởng nhanh - an toàn</h3>
-              <p class="why-tiktok-feature-desc">Cam kết tăng follow, view, khách hàng thật, giúp kênh phát triển bền vững, không vi phạm chính sách.</p>
+            <div class="why-choose-content">
+                <span class="why-choose-label">Ưu điểm</span>
+                <h2>Vì Sao Bạn Nên Chọn SOTA</h2>
+                <ul class="why-choose-list">
+                    <li>
+                        <span class="minus-icon">–</span>
+                        SOTA cung cấp giải pháp thực tiễn nhất
+                    </li>
+                    <li>
+                        <span class="minus-icon">–</span>
+                        Đối tác hàng đầu của TikTok Việt Nam
+                    </li>
+                    <li>
+                        <span class="minus-icon">–</span>
+                        Đội ngũ với nhiều năm kinh nghiệm
+                    </li>
+                    <li>
+                        <span class="minus-icon">–</span>
+                        Nhiều Case Studies thành công
+                    </li>
+                </ul>
             </div>
-          </div>
-          <div class="why-tiktok-feature">
-            <span class="why-tiktok-feature-icon"><i class="ri-lock-2-line"></i></span>
-            <div>
-              <h3 class="why-tiktok-feature-title">Bảo mật & minh bạch</h3>
-              <p class="why-tiktok-feature-desc">Cam kết bảo mật tuyệt đối tài khoản, rõ ràng trong báo cáo và chi phí, hỗ trợ tận tâm 24/7.</p>
-            </div>
-          </div>
-          <div class="why-tiktok-feature">
-            <span class="why-tiktok-feature-icon"><i class="ri-lightbulb-flash-line"></i></span>
-            <div>
-              <h3 class="why-tiktok-feature-title">Giải pháp linh hoạt, sáng tạo</h3>
-              <p class="why-tiktok-feature-desc">Đáp ứng mọi nhu cầu: tư vấn, nội dung viral, booking KOL, quảng cáo, livestream, tăng tương tác.</p>
-            </div>
-          </div>
         </div>
-      </div>
-  </section>
-  <!-- THÀNH TÍCH ĐẠT ĐƯỢC -->
-  <section class="sota-achievement-section">
-    <h2 class="title">Thành tích đã đạt được của SOTA</h2>
-    <div class="sota-achievement-row">
-      <div class="sota-achieve-box">
-        <div class="sota-achieve-number sota-blue">1.800</div>
-        <div class="sota-achieve-label">Khách hàng thành công</div>
-      </div>
-      <div class="sota-achieve-box">
-        <div class="sota-achieve-number sota-pink">650</div>
-        <div class="sota-achieve-label">Chiến dịch viral</div>
-      </div>
-      <div class="sota-achieve-box">
-        <div class="sota-achieve-number sota-green">5.230</div>
-        <div class="sota-achieve-label">Lượt view đạt được</div>
-      </div>
-      <div class="sota-achieve-box">
-        <div class="sota-achieve-number sota-yellow">120</div>
-        <div class="sota-achieve-label">Kênh &gt;100K followers</div>
-      </div>
-    </div>
-    <div class="sota-achievement-bottom">
-      <div class="sota-achievement-left">
-        <h3 class="sota-achievement-subtitle">Thành tích nổi bật</h3>
-        <ul class="sota-achievement-list">
-          <li>Đối tác quảng cáo TikTok chính thức tại Việt Nam</li>
-          <li>Triển khai hơn <b class="blue">650+ chiến dịch viral</b> đa ngành nghề</li>
-          <li>Đồng hành cùng <b class="blue">300+ thương hiệu lớn nhỏ</b></li>
-          <li>Đào tạo, tư vấn phát triển <b class="blue">120+ kênh TikTok trên 100k followers</b></li>
-          <li>Vinh danh tại <b class="blue">TikTok Marketing Summit 2024</b></li>
-        </ul>
-      </div>
-      <div class="sota-achievement-right">
-        <h3 class="sota-achievement-subtitle">Đối tác tiêu biểu</h3>
-        <div class="sota-achievement-logos">
-          <div class="logo-box">
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/2560px-TikTok_logo.svg.png" alt="TikTok">
-          </div>
-          <div class="logo-box">
-            <img src="https://mshopgear.vn/wp-content/uploads/2020/09/Shopee-logo.png" alt="Shopee">
-          </div>
-          <div class="logo-box">
-            <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo.png" alt="Zalo">
-          </div>
-          <div class="logo-box">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Vinamilk_new_logo.svg/2560px-Vinamilk_new_logo.svg.png" alt="Vinamilk">
-          </div>
-          <div class="logo-box">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Lazada_%282019%29.svg" alt="Lazada">
-          </div>
+    </section>
+
+
+<!-- Framerkit Swiper -->
+<section class="framerkit-bar">
+    <h2 class="framerkit-title">Gói dịch vụ cơ bản</h2>
+    <div class="framerkit-desc">Chúng tôi cung cấp giải pháp TikTok toàn diện: tăng view, tăng follower, quản lý nội dung và quảng cáo hiệu quả.</div>
+    <div class="swiper framerkit-swiper" style="margin-top: 48px;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="framerkit-item">
+                    <span class="framerkit-icon"><i class="ri-video-line"></i></span>
+                    Tăng View TikTok
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="framerkit-item">
+                    <span class="framerkit-icon"><i class="ri-user-follow-line"></i></span>
+                    Tăng Follower
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="framerkit-item">
+                    <span class="framerkit-icon"><i class="ri-star-line"></i></span>
+                    Xây Kênh Cá Nhân
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="framerkit-item">
+                    <span class="framerkit-icon"><i class="ri-upload-cloud-line"></i></span>
+                    Đăng Bài Tự Động
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="framerkit-item">
+                    <span class="framerkit-icon"><i class="ri-bar-chart-line"></i></span>
+                    Quảng Cáo TikTok
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="framerkit-item">
+                    <span class="framerkit-icon"><i class="ri-lightbulb-flash-line"></i></span>
+                    Tư Vấn Chiến Lược
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
-  <!-- BẢNG GIÁ -->
-  <section class="sota-pricing-section" id="pricing">
-    <h2 class="title">Bảng giá dịch vụ TikTok SOTA</h2>
     <div class="sota-pricing-table">
       <div class="sota-pricing-card">
         <div class="spc-header">STARTER</div>
@@ -177,7 +139,7 @@
         <div class="spc-price">5.000.000 <span class="spc-currency">VNĐ</span></div>
         <div class="spc-period">/ tháng</div>
         <div class="spc-desc">Tối đa 3 kênh TikTok</div>
-        <a href="#dangkytuvan"><button class="spc-btn spc-btn-hot">Đăng ký ngay</button></a>
+        <a href="#dangkytuvan"><button style="padding: 10px 38px;" class="cta-btn">Đăng ký ngay</button></a>
         <ul class="spc-features">
           <li>Đầy đủ tính năng Starter</li>
           <li>Chiến lược tăng trưởng follower</li>
@@ -191,7 +153,7 @@
         <div class="spc-price">10.000.000 <span class="spc-currency">VNĐ</span></div>
         <div class="spc-period">/ tháng</div>
         <div class="spc-desc">Không giới hạn kênh TikTok</div>
-        <a href="#dangkytuvan"><button class="spc-btn spc-btn-plus">Đăng ký ngay</button></a>
+        <a href="#dangkytuvan"><button style="padding: 10px 38px;" class="cta-btn">Đăng ký ngay</button></a>
         <ul class="spc-features">
           <li>Đầy đủ tính năng Pro</li>
           <li>Không giới hạn kênh TikTok</li>
@@ -216,12 +178,12 @@
         </ul>
       </div>
     </div>
-  </section>
+</section>
 
-      <div class="table-container">
-        <h1 class="title">Tính năng theo từng gói dịch vụ</h1>
+    <section class="table-container">
+        <h2 style=" text-align: center;">Tính năng theo từng gói dịch vụ</h2>
         <div class="comparison-table">
-            <!-- Table Header -->
+            <!-- Desktop Table Header -->
             <div class="table-header">
                 <div class="header-cell">
                     <div>TÍNH NĂNG / GÓI</div>
@@ -239,13 +201,14 @@
                     <div class="plan-header">PREMIUM</div>
                 </div>
             </div>
+            
             <!-- Table Body -->
             <div class="table-body">
-                <!-- Category 1 -->
+                <!-- Category 1: Quản lý Nội dung & Content -->
                 <div class="category-section">
                     <div class="category-header" onclick="toggleCategory(this)">
                         <div class="category-title">
-                            🎬 Quản lý Nội dung & Content
+                            📹 Quản lý Nội dung & Content
                             <span class="category-arrow">▼</span>
                         </div>
                         <div></div><div></div><div></div><div></div>
@@ -253,42 +216,43 @@
                     <div class="feature-rows">
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Quản lý đăng video cơ bản</div>
-                            <div class="feature-cell"><span class="mobile-plan-label"></span><div class="check-icon">✓</div></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Lên lịch đăng video tự động</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Chỉnh sửa video cơ bản</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Sản xuất nội dung chuyên nghiệp</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Tối ưu nội dung & SEO</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                     </div>
                 </div>
-                <!-- Category 2 -->
+
+                <!-- Category 2: Phân tích & Báo cáo -->
                 <div class="category-section">
                     <div class="category-header" onclick="toggleCategory(this)">
                         <div class="category-title">
@@ -300,42 +264,43 @@
                     <div class="feature-rows">
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Báo cáo hiệu quả hàng tuần</div>
-                            <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><div class="check-icon">✓</div></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Phân tích chuyên sâu & insights</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Theo dõi competitor</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Dashboard tùy chỉnh & KPI</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Xuất báo cáo chuyên nghiệp</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                     </div>
                 </div>
-                <!-- Category 2 -->
+
+                <!-- Category 3: Chiến lược & Tăng trưởng -->
                 <div class="category-section">
                     <div class="category-header" onclick="toggleCategory(this)">
                         <div class="category-title">
@@ -347,35 +312,36 @@
                     <div class="feature-rows">
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Chiến lược tăng follower</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Quản lý chiến dịch quảng cáo</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Chiến lược đa nền tảng</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Kết nối KOL & Influencer</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><div class="check-icon">✓</div></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                     </div>
                 </div>
-                <!-- Category 3 -->
+
+                <!-- Category 4: Hỗ trợ & Tư vấn -->
                 <div class="category-section">
                     <div class="category-header" onclick="toggleCategory(this)">
                         <div class="category-title">
@@ -387,153 +353,151 @@
                     <div class="feature-rows">
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Hỗ trợ email cơ bản</div>
-                            <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><div class="check-icon">✓</div></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Tư vấn kênh 1:1</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Priority Support</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><div class="check-icon">✓</div></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Dedicated Account Manager</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                         <div class="feature-row">
                             <div class="feature-cell feature-name">Đào tạo & Workshop</div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
-                            <div class="feature-cell"><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">STARTER:</span><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">PRO:</span><span class="not-available">–</span></div>
+                            <div class="feature-cell"><span class="mobile-plan-label">PLUS:</span><span class="not-available">–</span></div>
                             <div class="feature-cell"><span class="mobile-plan-label">PREMIUM:</span><div class="check-icon">✓</div></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-  <section class="sota-timeline-section" id="quy-trinh-tiktok">
-    <h1 class="title">Quy trình quản lý & phát triển kênh TikTok chuyên nghiệp tại SOTA</h1>
-    <div class="sota-timeline">
-      <div class="sota-timeline-step">
-        <div class="sota-timeline-dot"><i class="ri-search-eye-line"></i></div>
-        <div class="sota-timeline-step-number">Bước 1</div>
-        <div class="sota-timeline-step-title">Tư vấn & phân tích kênh TikTok</div>
-        <div class="sota-timeline-step-desc">
-          Chuyên gia SOTA khảo sát, phân tích chuyên sâu kênh TikTok doanh nghiệp/cá nhân: định vị thương hiệu, khách hàng mục tiêu, điểm mạnh yếu, xác định cơ hội tăng trưởng thực tế.
-        </div>
-      </div>
-      <div class="sota-timeline-step">
-        <div class="sota-timeline-dot"><i class="ri-file-list-3-line"></i></div>
-        <div class="sota-timeline-step-number">Bước 2</div>
-        <div class="sota-timeline-step-title">Lên chiến lược & kế hoạch nội dung viral</div>
-        <div class="sota-timeline-step-desc">
-          Xây dựng chiến lược phát triển kênh TikTok, đề xuất nội dung viral, lịch đăng video tối ưu, ý tưởng sáng tạo theo xu hướng và mục tiêu marketing.
-        </div>
-      </div>
-      <div class="sota-timeline-step">
-        <div class="sota-timeline-dot"><i class="ri-video-add-line"></i></div>
-        <div class="sota-timeline-step-number">Bước 3</div>
-        <div class="sota-timeline-step-title">Sản xuất video TikTok chuyên nghiệp</div>
-        <div class="sota-timeline-step-desc">
-          Đội ngũ SOTA quay dựng, biên tập video chất lượng cao, tối ưu hiệu ứng, nhạc nền, caption. Đảm bảo video hấp dẫn, tăng view và tương tác cho kênh TikTok.
-        </div>
-      </div>
-      <div class="sota-timeline-step">
-        <div class="sota-timeline-dot"><i class="ri-upload-cloud-line"></i></div>
-        <div class="sota-timeline-step-number">Bước 4</div>
-        <div class="sota-timeline-step-title">Đăng tải & quản trị kênh TikTok</div>
-        <div class="sota-timeline-step-desc">
-          Đăng video TikTok đúng lịch, tối ưu hashtag, quản lý bình luận, xử lý sự cố, tăng follower thật và xây dựng cộng đồng trung thành.
-        </div>
-      </div>
-      <div class="sota-timeline-step">
-        <div class="sota-timeline-dot"><i class="ri-bar-chart-grouped-line"></i></div>
-        <div class="sota-timeline-step-number">Bước 5</div>
-        <div class="sota-timeline-step-title">Báo cáo tăng trưởng & tối ưu hóa</div>
-        <div class="sota-timeline-step-desc">
-          SOTA cung cấp báo cáo phân tích hiệu quả, các chỉ số view, follower, tương tác, đưa ra đề xuất tối ưu giúp kênh TikTok phát triển bền vững và tăng trưởng mạnh mẽ.
-        </div>
-      </div>
-    </div>
-  </section>
-
-    <section class="testimonials-section">
-        <div class="testimonials-title">Khách hàng nghĩ gì về chúng tôi</div>
-        <div class="testimonials-desc">Những nhận xét thực tế từ khách hàng của chúng tôi.</div>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lê Thị Kim">
-                        <div class="testimonial-content">
-                            "Mọi thứ đều hoàn hảo! Tôi sẽ giới thiệu cho bạn bè và đồng nghiệp của mình."
+    <section class="tiktok-step-guide-container">
+        <div class="tiktok-step-guide-left">
+            <h2>Quy trình quản lý & phát triển</h2>
+            <span class="why-choose-label">ƯU ĐIỂM</span>
+            <div class="tiktok-timeline">
+                <div class="tiktok-timeline-item tiktok-timeline-first">
+                    <div class="tiktok-step-circle">1</div>
+                    <div>
+                        <div class="tiktok-step-title">Phân Tích & Xây Dựng Chiến Lược Kênh TikTok</div>
+                        <div class="tiktok-step-desc">
+                            Xây dựng chiến lược phát triển kênh TikTok: đề xuất nội dung viral, lịch đăng video tối ưu, ý tưởng sáng tạo theo xu hướng và mục tiêu marketing.
                         </div>
-                        <div class="testimonial-name">Lê Thị Kim</div>
-                        <div class="testimonial-job">Giáo viên</div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/men/65.jpg" alt="Phạm Quốc Toàn">
-                        <div class="testimonial-content">
-                            "Đội ngũ tư vấn rất tận tình, giải đáp mọi thắc mắc nhanh chóng."
+                <div class="tiktok-timeline-item tiktok-timeline-mid">
+                    <div class="tiktok-step-circle">2</div>
+                    <div>
+                        <div class="tiktok-step-title">Sản Xuất & Quản Trị Nội Dung</div>
+                        <div class="tiktok-step-desc">
+                            Đăng tải video đúng lịch, tối ưu hashtag, quản lý bình luận, xử lý sự cố, tăng follower thật và xây dựng cộng đồng trung thành cho kênh TikTok.
                         </div>
-                        <div class="testimonial-name">Phạm Quốc Toàn</div>
-                        <div class="testimonial-job">Nhà phát triển phần mềm</div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/women/12.jpg" alt="Vũ Thanh Thảo">
-                        <div class="testimonial-content">
-                            "Sản phẩm chất lượng, giá cả hợp lý, tôi rất hài lòng."
+                <div class="tiktok-timeline-item tiktok-timeline-last">
+                    <div class="tiktok-step-circle">3</div>
+                    <div>
+                        <div class="tiktok-step-title">Báo Cáo, Phân Tích & Tối Ưu Phát Triển Kênh</div>
+                        <div class="tiktok-step-desc">
+                            Đưa ra đề xuất tối ưu giúp kênh TikTok phát triển bền vững và tăng trưởng mạnh mẽ.
                         </div>
-                        <div class="testimonial-name">Vũ Thanh Thảo</div>
-                        <div class="testimonial-job">Nhà báo</div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Trần Văn Minh">
-                        <div class="testimonial-content">
-                            "Tôi thực sự hài lòng với chất lượng sản phẩm. Giao hàng nhanh và đóng gói rất cẩn thận."
-                        </div>
-                        <div class="testimonial-name">Trần Văn Minh</div>
-                        <div class="testimonial-job">Nhà thiết kế</div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Nguyễn Thị Hoa">
-                        <div class="testimonial-content">
-                            "Dịch vụ tuyệt vời. Đội ngũ hỗ trợ rất nhiệt tình và chuyên nghiệp. Tôi chắc chắn sẽ quay lại!"
-                        </div>
-                        <div class="testimonial-name">Nguyễn Thị Hoa</div>
-                        <div class="testimonial-job">Doanh nhân</div>
+                        <button style="margin-top: 30px;" class="cta-btn">SỬ DỤNG NGAY</button>
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+        </div>
+        <div class="tiktok-step-guide-right">
+            <img src="./img/36-q9mywyytutn6lbd7jgylvbndq18d0myq5my9bp6sdo.png.webp" alt="Hướng dẫn mua dịch vụ TikTok" />
         </div>
     </section>
+
+
+
+<section class="testimonials-section">
+    <h2 class="framerkit-title">Khách hàng nghĩ gì về chúng tôi</h2>
+    <div class="framerkit-desc">Những nhận xét thực tế từ khách hàng của chúng tôi.</div>
+    <div class="swiper testimonials-swiper" style="margin-top: 48px !important;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lê Thị Kim">
+                    <div class="testimonial-content">
+                        "Mọi thứ đều hoàn hảo! Tôi sẽ giới thiệu cho bạn bè và đồng nghiệp của mình."
+                    </div>
+                    <div class="testimonial-name">Lê Thị Kim</div>
+                    <div class="testimonial-job">Giáo viên</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/men/65.jpg" alt="Phạm Quốc Toàn">
+                    <div class="testimonial-content">
+                        "Đội ngũ tư vấn rất tận tình, giải đáp mọi thắc mắc nhanh chóng."
+                    </div>
+                    <div class="testimonial-name">Phạm Quốc Toàn</div>
+                    <div class="testimonial-job">Nhà phát triển phần mềm</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/women/12.jpg" alt="Vũ Thanh Thảo">
+                    <div class="testimonial-content">
+                        "Sản phẩm chất lượng, giá cả hợp lý, tôi rất hài lòng."
+                    </div>
+                    <div class="testimonial-name">Vũ Thanh Thảo</div>
+                    <div class="testimonial-job">Nhà báo</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Trần Văn Minh">
+                    <div class="testimonial-content">
+                        "Tôi thực sự hài lòng với chất lượng sản phẩm. Giao hàng nhanh và đóng gói rất cẩn thận."
+                    </div>
+                    <div class="testimonial-name">Trần Văn Minh</div>
+                    <div class="testimonial-job">Nhà thiết kế</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <img class="testimonial-avatar" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Nguyễn Thị Hoa">
+                    <div class="testimonial-content">
+                        "Dịch vụ tuyệt vời. Đội ngũ hỗ trợ rất nhiệt tình và chuyên nghiệp. Tôi chắc chắn sẽ quay lại!"
+                    </div>
+                    <div class="testimonial-name">Nguyễn Thị Hoa</div>
+                    <div class="testimonial-job">Doanh nhân</div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+
   <section class="faq-container">
     <div class="faq-image">
-      <img src="img/chamhoi.jpg" alt="Câu hỏi thường gặp" />
+      <img src="./img/faqs-danaseo.png" alt="Câu hỏi thường gặp" />
     </div>
     <div class="faq-content">
       <div class="faq-title">Câu hỏi thường gặp</div>
@@ -587,6 +551,8 @@
       </div>
     </div>
   </section>
+
+
   <section class="cta-gradient-bg">
     <!-- SVG sóng phân cách phía trên -->
     <div class="cta-wave-top">
@@ -608,7 +574,7 @@
         </div>
         <div class="cta-support">
           <strong>Hotline:</strong> <a href="tel:0987654321">0987 654 321</a> <br>
-          <strong>Zalo:</strong> <a href="https://zalo.me/0987654321" target="_blank">0987 654 321</a> <br>
+          <strong>Zalo:</strong> <a href="https://zalo.me/0376626344" target="_blank">0987 654 321</a> <br>
           <strong>Email:</strong> <a href="mailto:lienhe@tiktokpro.vn">lienhe@tiktokpro.vn</a>
         </div>
       </div>
@@ -628,84 +594,53 @@
       </div>
     </div>
   </section>
+
 </body>
 </html>
-  <script>
-    document.querySelectorAll('.faq-item').forEach(function(item) {
-      item.querySelector('.faq-question-row').onclick = function(e) {
-        if(item.classList.contains('active')) {
-          item.classList.remove('active');
-        } else {
-          document.querySelectorAll('.faq-item.active').forEach(e=>e.classList.remove('active'));
-          item.classList.add('active');
-        }
-      }
-    });
-  </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            slidesPerView: 1,
-            spaceBetween: 28,
-            loop: true,
-            grabCursor: true,
-            autoplay: {
-                delay: 3500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                700: {
-                    slidesPerView: 2,
-                },
-                1100: {
-                    slidesPerView: 3,
-                }
-            }
-        });
-    </script>
+<script src="app.js">
+</script>
 
-        <script>
-    // Accordion: chỉ 1 nhóm mở
-    function toggleCategory(element) {
-        document.querySelectorAll('.category-section').forEach(section => {
-            if (section !== element.parentElement) {
-                section.classList.add('collapsed');
-                let rows = section.querySelector('.feature-rows');
-                if (rows) {
-                    rows.style.maxHeight = '0';
-                    rows.style.opacity = '0';
-                }
-            }
-        });
-        const section = element.parentElement;
-        const rows = section.querySelector('.feature-rows');
-        if (section.classList.contains('collapsed')) {
-            section.classList.remove('collapsed');
-            rows.style.maxHeight = rows.scrollHeight + 'px';
-            rows.style.opacity = '1';
-        } else {
-            section.classList.add('collapsed');
-            rows.style.maxHeight = '0';
-            rows.style.opacity = '0';
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    // Framerkit swiper (nếu bạn cần hiệu ứng cho framerkit-bar)
+    new Swiper('.framerkit-swiper', {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+        speed: 900,
+        allowTouchMove: true,
+        grabCursor: true,
+        breakpoints: {
+            0:   { slidesPerView: 2.5, spaceBetween: 16 },
+            500: { slidesPerView: 3.5, spaceBetween: 20 },
+            800: { slidesPerView: 5, spaceBetween: 30 }
         }
-    }
-    // Chỉ mở 1 nhóm đầu khi load
-    document.addEventListener('DOMContentLoaded', function() {
-        document.querySelectorAll('.category-section').forEach((section, idx) => {
-            const rows = section.querySelector('.feature-rows');
-            if (idx === 0) {
-                section.classList.remove('collapsed');
-                rows.style.maxHeight = rows.scrollHeight + 'px';
-                rows.style.opacity = '1';
-            } else {
-                section.classList.add('collapsed');
-                rows.style.maxHeight = '0';
-                rows.style.opacity = '0';
-            }
-        });
     });
-    </script>
+
+    // Testimonials swiper
+    new Swiper('.testimonials-swiper', {
+        slidesPerView: 3,
+        spaceBetween: 28,
+        loop: true,
+        centeredSlides: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.testimonials-swiper .swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            0: { slidesPerView: 1, centeredSlides: true },
+            700: { slidesPerView: 2, centeredSlides: true },
+            1100: { slidesPerView: 3, centeredSlides: true }
+        }
+    });
+</script>
